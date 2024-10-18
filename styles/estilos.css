@@ -36,7 +36,7 @@ h1, h2, h3, h4 {
     font-weight: 800;
     line-height: 1.3em;
 
-    text-wrap: balance;
+    /* text-wrap: balance; */
 }
 
 h2 {
@@ -48,46 +48,164 @@ p {
     text-wrap: pretty;
 }
 
-header {
+.main-header {
     display: none;
-}
-
-.contenedor-btn {
-    display: flex;
-    justify-content: center;
-    gap: 2em;
-}
-
-.btn {
-    padding: 1em 2em;
-
-    border: none;
-    border-radius: 5px;
-    background-color: #C24444;
-
-    color: var(--txt-color);
-    font-size: 1em;
 }
 
 main {
     padding: 3em;
 }
 
-footer ul {
-    margin: 4em 9em 0;
+/* Ya puse los diseños mas generales, y ahora quiero probar implementar
+ * la metodología BEM y variables, por lo que es probable que algunas
+ * cuestiones estén mal implementadas
+ */
+
+.main-container {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    min-height: 100.2vh;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.actions__btn {
+    --btn-bg-color: #C24444;
+    --btn-hover: #ad3535;
+    --btn-txt: #FFF;
+    padding: 1em 2em;
+
+    border: none;
+    border-radius: 5px;
+    background-color: var(--btn-bg-color);
+
+    color: var(--btn-txt);
+    font-size: 1em;
+}
+
+.actions__btn--white {
+    --btn-bg-color: #FFF;
+    --btn-hover: #e1e1e1;
+    --btn-txt: #242424;
+}
+
+.cantidadDiscos {
+    text-align: center;
+    margin: 1em auto;
+}
+
+.disc {
+    /* border: 1px solid red; */
+    padding: 2em;
+    margin-top: 4em;
+    background-color: #1b1b1b;
+    border-radius: 4px;
+
+    &:first-child {
+        margin-top: 0;
+    }
+}
+
+.disc__header {
+    display: flex;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+
+.disc__img {
+    aspect-ratio: 1 / 1;
+    width: 300px;
+    display: flex;
+    border-radius: 4px;
+
+    background-color: rgb(255 255 255 /.1);
+    align-items: center;
+    justify-content: center;
+}
+
+.disc__name {
+    font-size: 3em;
+    margin-bottom: 8px;
+}
+
+.disc__band {
+    font-size: 1em;
+}
+
+.disc__band--span {
+    font-weight: normal;
+    &::before {
+        content: '● ';
+        color: rgb(255 255 255 / .3);
+    }
+}
+
+.disc__id {
+    color:rgba(255, 255, 255, .5);
+    font-size: .8em;
+}
+
+.hints {
+    border-top: rgba(255, 255, 255, .9);
+}
+
+.hints__item {
+    padding: .3em 1em;
+
+    display: flex;
+    gap: 1em;
+
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+
+    &:last-child {
+        border-bottom: none;
+    }
+}
+
+.hints__number {
+    color: rgba(255, 255, 255, .5);
+}
+
+.hints__name {
+    flex-grow: 1;
+}
+
+.hints__duration--large{
+    outline: 1px solid rgb(255 255 255 / .5);
+}
+
+.hints__duration--largest{
+    background-color: rgb(255 255 255 / .3);
+}
+
+.hints__item--first-child {
+    font-weight: normal;
+    color: rgb(255 255 255 / .5);
+}
+
+.footer__list {
+    margin: 0 7em;
     padding: 1em 3em;
 
     border-top: 2px solid rgba(255, 255, 255, .1);
 
-    display: flex;
-    justify-content: space-between;
-
     list-style: none;
     font-size: .8em;
+    text-align: center;
 }
+
 @media screen and (min-width: 1280px){
-    .btn:hover {
+    .actions__btn:hover {
         cursor: pointer;
-        background-color: #b73a3a;
+        background-color: var(--btn-hover);
+    }
+
+    .footer__list {
+        display: flex;
+        justify-content: space-between;
     }
 }
