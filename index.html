@@ -2,7 +2,7 @@
 <html lang="es">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=yes">
 
         <title>Programación I | Parcial 1 | Corbalan, Nicolas Leonel</title>
         <link rel="shortcut icon" href="favicon.ico">
@@ -12,8 +12,8 @@
 
         <!-- SCRIPTS -->
         <script src="js/main.js" defer></script>
-        <script src="js/clase-disco" defer></script>
-        <script src="js/clase-pista" defer></script>
+        <script src="js/clase-disco.js" defer></script>
+        <script src="js/clase-pista.js" defer></script>
     </head>
     <body>
         <div>
@@ -21,68 +21,16 @@
                 <p class="d-none">Programación I | Parcial 1 | Corbalan, Nicolas Leonel</p>
             </header>
             <main>
-                <p>Mis discos</p>
+                <h1>Mis discos</h1>
                 <div>
                     <button id="btnNuevoDisco">Cargar nuevo disco</button>
                     <button id="btnMostrarDiscos">Mostrar discos</button>
                     <button id="btnBuscarDisco">Buscar disco</button>
                 </div>
-                <p>Se están mostrando 0 discos</p>
-                <section id="contenedorDiscos">
-                    <!-- Acá se van a mostrar todos los discos cargados -->
-                    <article>
-                        <header>
-                            <div>
-                                <h1>Al Parecer Todo Ha Sido una Trampa</h1>
-                                <p>Airbag - 19 Pistas</p>
-                                <p>123</p>
-                            </div>
-                            <div>
-                                <img alt="Portada del disco: Al Parecer Todo Ha Sido una Trampa" src="https://i.scdn.co/image/ab67616d0000b273536521e97eaf8309fe37ed34">
-                            </div>
-                        </header>
-                        <div>
-                            <ul>
-                                <li>
-                                    <h2>Intoxicarme</h2>
-                                    <p>20:04:20</p>
-                                </li>
-                                <li>
-                                    <h2>Intoxicarme</h2>
-                                    <p>20:04:20</p>
-                                </li>
-                                <li>
-                                    <h2>Intoxicarme</h2>
-                                    <p>20:04:20</p>
-                                </li>
-                                <li>
-                                    <h2>Intoxicarme</h2>
-                                    <p>20:04:20</p>
-                                </li>
-                                <li>
-                                    <h2>Intoxicarme</h2>
-                                    <p>20:04:20</p>
-                                </li>
-                                <li>
-                                    <h2>Intoxicarme</h2>
-                                    <p>20:04:20</p>
-                                </li>
-                                <li>
-                                    <h2>Intoxicarme</h2>
-                                    <p>20:04:20</p>
-                                </li>
-                                <li>
-                                    <h2>Intoxicarme</h2>
-                                    <p>20:04:20</p>
-                                </li>
-                                <li>
-                                    <h2>Intoxicarme</h2>
-                                    <p>20:04:20</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </article>
-                </section>
+                <p id="cantidadDiscos">Se están mostrando 0 discos</p>
+                <div id="contenedorDiscos">
+                    <!-- Acá se van a mostrar todos los discos cargados --> 
+                </div>
             </main>
             <footer>
                 <ul>
