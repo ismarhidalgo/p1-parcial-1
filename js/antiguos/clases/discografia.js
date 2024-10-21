@@ -13,7 +13,7 @@ class Discografia{
         const discoNombre = solicitarTexto("Ingrese el nombre del disco");
         const discoArtista = solicitarTexto("Ingrese el nombre del artista");
         const discoPortada = solicitarTexto("Ingrese el link a la portada");
-        let discoId = 0;
+        let discoId;
         do {
             discoId = solicitarNumeroEnRango(0, 999, "Ingrese el código numérico único del disco");
 

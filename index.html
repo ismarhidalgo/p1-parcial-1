@@ -1,46 +1,101 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="es">
     <head>
-        <meta charset="utf-8" />
-        <!-- Reemplazar por los datos que correspondan -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+
         <title>Programación I | Parcial 1 | Corbalan, Nicolas Leonel</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" />
-        <link rel="shortcut icon" href="favicon.ico" />
-        <link rel="stylesheet" href="styles/estilos.css" />
+        <link rel="shortcut icon" href="favicon.ico">
+
+        <!-- ESTILOS -->
+        <!-- <link rel="stylesheet" href="css/styles.css"> -->
+
+        <!-- SCRIPTS -->
+        <script src="js/main.js" defer></script>
+        <script src="js/clase-disco" defer></script>
+        <script src="js/clase-pista" defer></script>
     </head>
     <body>
-        <div class="main-container">
-            <header class="main-header">
-                <h1>Programación I | Parcial 1 | Corbalan, Nicolas Leonel</h1>
+        <div>
+            <header>
+                <p class="d-none">Programación I | Parcial 1 | Corbalan, Nicolas Leonel</p>
             </header>
             <main>
-                <h2>Mis discos</h2>
-                <div class="actions">
-                    <button class="actions__btn" onclick="cargar();">Cargar nuevo disco</button>
-                    <button class="actions__btn" onclick="mostrar();">Mostrar discos</button>
-                    <button class="actions__btn" onclick="buscarDisco();">Buscar disco</button>
+                <p>Mis discos</p>
+                <div>
+                    <button id="btnNuevoDisco">Cargar nuevo disco</button>
+                    <button id="btnMostrarDiscos">Mostrar discos</button>
+                    <button id="btnBuscarDisco">Buscar disco</button>
                 </div>
-                <p id="cantidadDiscos" class="cantidadDiscos">Se están mostrando 0 discos</p>
-                <section id="contenedorDiscos" class="contenedorDiscos">
+                <p>Se están mostrando 0 discos</p>
+                <section id="contenedorDiscos">
+                    <!-- Acá se van a mostrar todos los discos cargados -->
+                    <article>
+                        <header>
+                            <div>
+                                <h1>Al Parecer Todo Ha Sido una Trampa</h1>
+                                <p>Airbag - 19 Pistas</p>
+                                <p>123</p>
+                            </div>
+                            <div>
+                                <img alt="Portada del disco: Al Parecer Todo Ha Sido una Trampa" src="https://i.scdn.co/image/ab67616d0000b273536521e97eaf8309fe37ed34">
+                            </div>
+                        </header>
+                        <div>
+                            <ul>
+                                <li>
+                                    <h2>Intoxicarme</h2>
+                                    <p>20:04:20</p>
+                                </li>
+                                <li>
+                                    <h2>Intoxicarme</h2>
+                                    <p>20:04:20</p>
+                                </li>
+                                <li>
+                                    <h2>Intoxicarme</h2>
+                                    <p>20:04:20</p>
+                                </li>
+                                <li>
+                                    <h2>Intoxicarme</h2>
+                                    <p>20:04:20</p>
+                                </li>
+                                <li>
+                                    <h2>Intoxicarme</h2>
+                                    <p>20:04:20</p>
+                                </li>
+                                <li>
+                                    <h2>Intoxicarme</h2>
+                                    <p>20:04:20</p>
+                                </li>
+                                <li>
+                                    <h2>Intoxicarme</h2>
+                                    <p>20:04:20</p>
+                                </li>
+                                <li>
+                                    <h2>Intoxicarme</h2>
+                                    <p>20:04:20</p>
+                                </li>
+                                <li>
+                                    <h2>Intoxicarme</h2>
+                                    <p>20:04:20</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
                 </section>
             </main>
-            <footer class="footer">
-                <ul class="footer__list">
-                    <li class="footer__item">Profesor Fabrizio Carlassara</li>
-                    <li class="footer__item">
+            <footer>
+                <ul>
+                    <li>Profesor Fabrizio Carlassara</li>
+                    <li>
                         <a href="mailto:fabrizio.carlassara@davinci.edu.ar?subject=P1%20-%20Consulta%20-%20DW2[M|T|N][A|B]%20-%20Apellido,%20Nombre" target="_blank">fabrizio.carlassara@davinci.edu.ar</a>
                     </li>
-                    <li class="footer__item">Programación 1</li>
-                    <li class="footer__item">
+                    <li>Programación 1</li>
+                    <li>
                         <a target="_blank" href="https://github.com/Lele-web-design/p1-parcial-1">Repositorio de GitHub</a>
                     </li>
                 </ul>
             </footer>
         </div>
-
-        <script src="scripts/clases/discografia.js"></script>
-        <script src="scripts/clases/disco.js"></script>
-        <script src="scripts/clases/pista.js"></script>
-        <script src="scripts/index.js"></script>
     </body>
 </html>
