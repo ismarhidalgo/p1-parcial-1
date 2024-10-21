@@ -82,5 +82,5 @@ Entre las entregas que cumplan el punto anterior, incrementarán su nota los des
 
 - Se descontarán puntos por errores semánticos en el uso de los elementos HTML.
 - Se descontarán puntos por el uso incorrecto de las estructuras de programación.
-- Se descontarán puntos por no mostrar 
+- Se descontarán puntos por no mostrar
 - La lógica del programa también será evaluada.

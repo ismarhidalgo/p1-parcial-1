@@ -16,7 +16,7 @@ class Pista {
         return `
             <li>
                 <h3>${this.#nombre}</h3>
-                <p class="${this.obtenerClases()}">${this.#duracion.toHhMmSs()}</p>
+                <p class="${this.obtenerClases()}">${this.#duracion.toHhMmSs(3)}</p>
             </li>
         `;
     }
@@ -26,8 +26,8 @@ class Pista {
      * pista debería tener en base a sus características
      */
     obtenerClases() {
-        let clases = "pistas__duracion";
-        if(this.#duracion > 180) clases += " --larga";
+        let clases = "duracion";
+        if(this.#duracion > 180) clases += " duracion--larga";
 
         return clases;
     }

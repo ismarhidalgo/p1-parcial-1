@@ -126,7 +126,8 @@ Number.prototype.toHhMmSs = function (_formato = 1) {
     const FORMATOS = {
         0 : {hh, mm, ss},
         1 : `${hh}:${mm}:${ss}`,
-        2 : `${hh} h ${mm} min ${ss} seg`
+        2 : `${hh} h ${mm} min ${ss} seg`,
+        3 : `${mm}:${ss}`
     };
 
     return FORMATOS[_formato];

@@ -1,7 +1,6 @@
 'use strict';
 
 class Disco {
-    // Ordenadas en el orden en el que aparecen en el json (sin ningún motivo aparente)
     #nombre;
     #artista;
     #id;
@@ -23,18 +22,18 @@ class Disco {
         return `
             <article>
                 <header>
-                    <div>
+                    <div class="info">
                         <h2>${this.#nombre}</h2>
-                        <p>${this.#artista} ● ${this.#pistas.length} Pistas, ${this.getDuracionTotal.toHhMmSs(2)}, (promedio: ${(this.getDuracionTotal / this.#pistas.length).toHhMmSs(2)}) </p>
-                        <p>${this.#id}</p>
+                        <p class="artista"><span class="text-bold">${this.#artista}</span> ● ${this.#pistas.length} Pistas, ${this.getDuracionTotal.toHhMmSs(2)}, (promedio: ${(this.getDuracionTotal / this.#pistas.length).toHhMmSs(2)}) </p>
+                        <p class="id">id: ${this.#id}</p>
                     </div>
-                    <div>
+                    <div class="portada">
                         <img alt="Portada del disco: ${this.#nombre}" src="${this.#portada}">
                     </div>
                 </header>
                 <div>
                     <ul>
-                        ${this.#pistas.map(pista => pista.generarEstructuraHtml()).join()}
+                        ${this.#pistas.map(pista => pista.generarEstructuraHtml()).join(" ")}
                     </ul>
                 </div>
             </article>
@@ -48,6 +47,9 @@ class Disco {
         return this.#pistas.reduce((duracionTotal, pista) => duracionTotal + pista.getDuracion, 0);
     }
 
+    /*
+     * Función usada principalmente para validar si el códgio ya existe en el archivo main.js
+     */
     get getId() {
         return this.#id;
     }

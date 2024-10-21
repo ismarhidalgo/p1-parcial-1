@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+:root {
+    --bg-color-1: #111;
+    --bg-color-2: #222;
+    --bg-color-3: #2a2a2a;
+    --bg-color-4: rgb(255 255 255 / .1);
+
+    --txt-color-1: #eee;
+    --txt-color-2: #eeeeee9d;
+    --links-color: rgb(176, 176, 254);
+
+    --border-radius: 4px;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: var(--links-color);
+}
+
+.d-none {
+    display: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+body {
+    min-height: 100dvh;
+    max-width: 1680px;
+    padding: 16px;
+    padding-top: 5rem;
+
+    display: grid;
+    grid-template-rows: 1fr auto;
+
+    font-family: 'Nunito Sans', sans-serif;
+    color: var(--txt-color-1);
+    background-color: var(--bg-color-1);
+}
+
+.acciones {
+    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+button {
+    padding: .5em 1em;
+
+    font-size: 1.2rem;
+    color: var(--txt-color-1);
+    background-color: indianred;
+    border: none;
+    border-radius: var(--border-radius);
+
+    cursor: pointer;
+    &:hover {
+        background-color: rgb(170, 74, 74);
+    }
+
+    &:focus {
+        outline: 1px solid indianred;
+        outline-offset: 2px;
+    }
+}
+
+#contenedorDiscos {
+
+    > article {
+        padding: 2em;
+        margin: 2em;
+        background-color: var(--bg-color-2);
+        border-radius: var(--border-radius);
+
+        > header {
+            display: flex;
+            justify-content: flex-end;
+            flex-direction: column-reverse;
+            gap: 2em;
+
+            & img {
+                width: 300px;
+            }
+
+            & div.info {
+                display: grid;
+                grid-template-rows: 1fr auto auto;
+                row-gap: .5em;
+                padding-bottom: 1rem;
+
+                > h2 {
+                    align-self: center;
+                    font-size: 4em;
+                }
+
+                > p.artista {
+                    font-size: 1.4rem;
+                }
+
+                > p.id {
+                    color: var(--txt-color-2);
+                }
+            }
+        }
+
+        > div ul{
+            border: 1px solid red;
+            margin: 1rem;
+
+            & li {
+                display: grid;
+                grid-template-columns: 1fr auto;
+                padding: .5em 1em;
+                border-radius: var(--border-radius);
+
+                &:nth-child(even) {
+                    background-color: var(--bg-color-3);
+                }
+
+                & p.duracion {
+                    align-self: center;
+                }
+                & p.duracion--larga::before {
+                    content: '+3min';
+                    background-color: var(--bg-color-4);
+                    padding: .2rem .4rem;
+                    border-radius: var(--border-radius);
+                    opacity: .3;
+                    margin: 0 1rem;
+                }
+            }
+        }
+    }
+}
+/* <article>
+                <header>
+                    <div>
+                        <h2>${this.#nombre}</h2>
+                        <p>${this.#artista} ● ${this.#pistas.length} Pistas, ${this.getDuracionTotal.toHhMmSs(2)}, (promedio: ${(this.getDuracionTotal / this.#pistas.length).toHhMmSs(2)}) </p>
+                        <p>${this.#id}</p>
+                    </div>
+                    <div>
+                        <img alt="Portada del disco: ${this.#nombre}" src="${this.#portada}">
+                    </div>
+                </header>
+                <div>
+                    <ul>
+                        ${this.#pistas.map(pista => pista.generarEstructuraHtml()).join()}
+                    </ul>
+                </div>
+            </article> */
+
+footer ul {
+    border-top: 1px solid var(--txt-color-2);
+    max-width: 90%;
+
+    margin: 2rem auto 0;
+    padding: 1rem;
+
+    text-align: center;
+
+    > li:not(:last-child) {
+        margin-bottom: .5rem;
+    }
+}
+
+@media (width >= 1280px) {
+    footer ul{
+        display: flex;
+        justify-content: space-around;
+
+        > li {
+            margin-bottom: 0;
+        }
+    }
+
+    #contenedorDiscos {
+
+        > article {
+
+            > header {
+                flex-direction: row-reverse;
+            }
+        }
+    }
+}
