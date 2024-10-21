@@ -120,7 +120,6 @@ button {
         }
 
         > div ul{
-            border: 1px solid red;
             margin: 1rem;
 
             & li {
