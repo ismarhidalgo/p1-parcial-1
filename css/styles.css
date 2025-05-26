@@ -42,11 +42,15 @@ h3{
   font-size: 2rem;
 }
 .contenedor {
-  background-color: #08007c;
-  font-size: 2.5em;
-    /*background-color: rgb(51, 51, 51);*/
-    padding: 0.5em;
-    border-radius: 9px 9px 0px 0px;
+ background-color: transparent; /* o el color que estés usando */
+  height: auto; /* Asegura que se ajuste al contenido */
+  padding: 10px 20px; /* Achica el espacio interno */
+  margin: 20px auto; /* Ajustá si querés separarlo de otros elementos */
+  border-bottom: 2px solid #eba100; /* Opcional, por estética */
+  max-width: 300px; /* Opcional, limita el ancho */
+  text-align: center;
+  color: white;
+  font-size: 1.2rem;
 }
 h4 {
   margin-top: 10rem;
