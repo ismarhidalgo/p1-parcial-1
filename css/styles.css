@@ -91,7 +91,7 @@ body {
   font-family: "Nunito Sans", sans-serif;
   color: var(--txt-color-1);
   background-color: var(--bg-color-1);
-  background-image: url(/css/imagenes/1.jpg);
+  background-image: url(../imagenes/1.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
