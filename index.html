@@ -1,47 +1,56 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=yes">
 
-        <title>Programación I | Parcial 1 | Corbalan, Nicolas Leonel</title>
-        <!-- <link rel="shortcut icon" href="favicon.ico"> -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=yes">
 
-        <!-- ESTILOS -->
-        <link rel="stylesheet" href="css/styles.css">
+    <title>Programación I | Parcial 1 | Hidalgo Ismar</title>
+    <link rel="icon" href="css/imagenes/favicon.jpg" type="image/png">
 
-        <!-- SCRIPTS -->
-        <script src="js/main.js" defer></script>
-        <script src="js/clase-disco.js" defer></script>
-        <script src="js/clase-pista.js" defer></script>
-    </head>
-    <body>
-        <header class="d-none">
-            <p>Programación I | Parcial 1 | Corbalan, Nicolas Leonel</p>
-        </header>
-        <main>
-            <h1 class="text-center">Mis discos</h1>
-            <div class="acciones">
-                <button id="btnNuevoDisco">Cargar nuevo disco</button>
-                <button id="btnMostrarDiscos">Mostrar discos</button>
-                <button id="btnBuscarDisco">Buscar disco</button>
-            </div>
-            <p id="cantidadDiscos" class="text-center">Se están mostrando 0 discos</p>
-            <div id="contenedorDiscos">
-                <!-- Acá se van a mostrar todos los discos cargados -->
-            </div>
-        </main>
-        <footer>
-            <ul>
-                <li>Profesor Fabrizio Carlassara</li>
-                <li>
-                    <a href="mailto:fabrizio.carlassara@davinci.edu.ar?subject=P1%20-%20Consulta%20-%20DW2[M|T|N][A|B]%20-%20Apellido,%20Nombre" target="_blank">fabrizio.carlassara@davinci.edu.ar</a>
-                </li>
-                <li>Programación 1</li>
-                <li>
-                    <a target="_blank" href="https://github.com/Lele-web-design/p1-parcial-1">Repositorio de GitHub</a>
-                </li>
-            </ul>
-        </footer>
-    </body>
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- SCRIPTS -->
+    <script src="js/clase-pista.js" defer></script>
+    <script src="js/clase-disco.js" defer></script>
+    <script src="js/index.js" defer></script>
+</head>
+
+<body>
+    <header class="d-none">
+        <h1>Programación I</h1>
+    </header>
+    <main>
+        <h2>Programación I | Parcial 1 | Hidalgo Ismar | Ailén Sosa</h2>
+        <div class="contenedor">
+            <h3 class="text-center">Mis discos</h3>
+        </div>
+        <div class="acciones">
+            <button id="btnNuevoDisco">Cargar disco</button>
+            <button id="btnMostrarDiscos">Mostrar discos</button>
+            <button id="btnBuscarDisco">Buscar disco</button>
+        </div>
+        <h4 id="cantidadDiscos" class="text-center">Se están mostrando 0 discos</h4>
+        <div id="contenedorDiscos">
+            <!-- Acá se van a mostrar todos los discos cargados -->
+        </div>
+        <h5 id="discosCargados" class="text-center">Cargando discos...</h5>
+    </main>
+    <footer>
+        <ul>
+            <li>Profesor Fabrizio Carlassara</li>
+            <li>Programación I</li>
+            <li>
+                <a target="_blank" href="https://github.com/ismarhidalgo/p1-parcial-1#">Repositorio de GitHub -
+                    Ismar</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://github.com/ismarhidalgo/p1-parcial-1#">Repositorio de GitHub -
+                    Ailén</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
 </html>

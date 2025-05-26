@@ -1,144 +1,140 @@
 [
     {
-        "nombre": "Al Parecer Todo Ha Sido una Trampa",
-        "artista": "Airbag",
+        "nombre": "Moon Music",
+        "artista": "Coldplay",
         "id": 123,
-        "portada": "https://i.scdn.co/image/ab67616d0000b273536521e97eaf8309fe37ed34",
+        "portada": "https://www.piramideinvertida.com.ar/wp-content/uploads/2024/10/COLDPLAY-MOON-MUSIC.jpg",
         "pistas": [
             {
-                "nombre": "Intoxicarme",
-                "duracion": 181
+                "nombre": "Moon Music",
+                "duracion": 277
             },
             {
-                "nombre": "Pensamientos",
+                "nombre": "Feels like Im falling in love",
                 "duracion": 253
             },
             {
-                "nombre": "Kamikaze",
+                "nombre": "We Pray",
                 "duracion": 141
             },
             {
-                "nombre": "Ganas de Verte",
-                "duracion": 183
+                "nombre": "Jupiter",
+                "duracion": 240
             },
             {
-                "nombre": "Jinetes Cromados",
-                "duracion": 183
+                "nombre": "Good Feelings",
+                "duracion": 210
             },
             {
-                "nombre": "Cuchillos Guantanamera",
-                "duracion": 252
+                "nombre": "Alien Hits",
+                "duracion": 370
             },
             {
-                "nombre": "Campos Elíseos",
+                "nombre": "iAAM",
                 "duracion": 276
             },
             {
-                "nombre": "Mamba Negra",
+                "nombre": "AETERNA",
                 "duracion": 204
             },
             {
-                "nombre": "Motor Enfermo (Frankenstein)",
+                "nombre": "All My Love",
                 "duracion": 279
             }, 
             {
-                "nombre": "Al Parecer Todo Ha Sido una Trampa",
+                "nombre": "One World",
                 "duracion": 276
             },
             {
-                "nombre": "Volver a Casa",
+                "nombre": "The Karate Kid",
                 "duracion": 183
             },
             {
-                "nombre": "Perdido",
+                "nombre": "Angelsong",
                 "duracion": 247
             },
             {
-                "nombre": "Como un Diamante",
+                "nombre": "Main in the Moon",
                 "duracion": 182
             },
             {
-                "nombre": "Mila, Saturno y el Río",
+                "nombre": "I am a Mountain",
                 "duracion": 252
             },
             {
-                "nombre": "Über Puber",
+                "nombre": "A Wave",
                 "duracion": 179
-            },
-            {
-                "nombre": "Así de Fácil",
-                "duracion": 227
             }
         ]
     },
     {
-        "nombre": "folklore",
+        "nombre": "Folklore",
         "artista": "Taylor Swift",
         "id": 111,
         "portada": "https://i.scdn.co/image/ab67616d0000b27395f754318336a07e85ec59bc",
         "pistas": [
             {
-                "nombre": "the 1",
+                "nombre": "The 1",
                 "duracion": 210
             },
             {
-                "nombre": "cardigan",
+                "nombre": "Cardigan",
                 "duracion": 239
             },
             {
-                "nombre": "the last great american dynasty",
+                "nombre": "The last great american dynasty",
                 "duracion": 231
             },
             {
-                "nombre": "exile (feat. Bon Iver",
+                "nombre": "Exile (feat. Bon Iver",
                 "duracion": 285
             },
             {
-                "nombre": "my tears ricochet",
+                "nombre": "My tears ricochet",
                 "duracion": 255
             },
             {
-                "nombre": "mirrorball",
+                "nombre": "Mirrorball",
                 "duracion": 208
             },
             {
-                "nombre": "seven",
+                "nombre": "Seven",
                 "duracion": 208
             },
             {
-                "nombre": "august",
+                "nombre": "August",
                 "duracion": 261
             },
             {
-                "nombre": "this is me trying",
+                "nombre": "This is me trying",
                 "duracion": 195
             },
             {
-                "nombre": "illicit affairs",
+                "nombre": "Illicit affairs",
                 "duracion": 190
             },
             {
-                "nombre": "invisible string",
+                "nombre": "Invisible string",
                 "duracion": 252
             },
             {
-                "nombre": "mad woman",
+                "nombre": "Mad woman",
                 "duracion": 237
             },
             {
-                "nombre": "epiphany",
+                "nombre": "Epiphany",
                 "duracion": 289
             },
             {
-                "nombre": "betty",
+                "nombre": "Betty",
                 "duracion": 294
             },
             {
-                "nombre": "peace",
+                "nombre": "Peace",
                 "duracion": 234
             },
             {
-                "nombre": "hoax",
+                "nombre": "Hoax",
                 "duracion": 211
             }
         ]

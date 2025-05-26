@@ -1,152 +1,229 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
 
 :root {
-    --bg-color-1: #111;
-    --bg-color-2: #222;
-    --bg-color-3: #2a2a2a;
-    --bg-color-4: rgb(255 255 255 / .1);
+  --bg-color-1: #2a0033;
+  --bg-color-2: #bf3b02;
+  --bg-color-3: #eba100;
+  --bg-color-4: rgb(255 255 255 / 0.1);
+  --bg-color-5: #2a0033e3;
 
-    --txt-color-1: #eee;
-    --txt-color-2: #eeeeee9d;
-    --links-color: rgb(176, 176, 254);
+  --txt-color-1: #eee;
+  --txt-color-2: #eeeeee9d;
+  --links-color: rgb(176, 176, 254);
 
-    --border-radius: 4px;
+  --border-radius: 5px;
+}
+/* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}*/
+
+img {
+  display: block;
+  max-width: 100%;
 }
 
-*, *::before, *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.d-none {
+  display: none;
+}
+h2 {
+  margin-bottom: 5rem;
+  font-size: 3rem;
+}
+h3{
+  font-size: 2rem;
+}
+.contenedor {
+  background-color: #08007c;
+  font-size: 2.5em;
+    /*background-color: rgb(51, 51, 51);*/
+    padding: 0.5em;
+    border-radius: 9px 9px 0px 0px;
+}
+h4 {
+  margin-top: 10rem;
+  font-size: 1.8rem;
+}
+
+h5{
+  margin-top: 5rem;
+  font-size: 1.5rem;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    color: var(--links-color);
-}
-
-.d-none {
-    display: none;
+  color: var(--links-color);
 }
 
 .text-center {
-    text-align: center;
+  text-align: center;
 }
 
 .text-bold {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 body {
-    min-height: 100dvh;
-    max-width: 1680px;
-    padding: 16px;
-    padding-top: 5rem;
+  min-height: 100dvh;
+  max-width: 1980px;
+  padding: 16px;
+  padding-top: 3rem;
+  text-align: center;
 
-    display: grid;
-    grid-template-rows: 1fr auto;
+  display: grid;
+  grid-template-rows: 1fr auto;
 
-    font-family: 'Nunito Sans', sans-serif;
-    color: var(--txt-color-1);
-    background-color: var(--bg-color-1);
+  font-family: "Nunito Sans", sans-serif;
+  color: var(--txt-color-1);
+  background-color: var(--bg-color-1);
+  background-image: url(/css/imagenes/1.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .acciones {
-    margin: 1rem auto;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
+  margin: 3rem auto;
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
 }
 
 button {
-    padding: .5em 1em;
+  padding: 0.8em 1.5em;
 
-    font-size: 1.2rem;
-    color: var(--txt-color-1);
-    background-color: indianred;
-    border: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--txt-color-1);
+  background-color: rgb(255, 94, 0);
+  border: none;
+  border-radius: var(--border-radius);
+
+  cursor: pointer;
+  &:hover {
+    background-color: rgb(255, 149, 0);
+  }
+
+  &:focus {
+    outline: 1px solid rgb(255, 149, 0);
+    outline-offset: 2px;
+  }
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3em;
+  background-color: var(--bg-color-2);
+  box-shadow: 0 0px 15px rgb(0, 0, 0);
+  border-radius: 100px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column-reverse;
+  text-align: center;
+  margin-bottom: 2rem;
+  gap: 2em;
+}
+.destacada {
+    background-color: #09007c;
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+}
+.pista-mas-larga{
+  margin-top: 10px;
+    font-style: italic;
+    color: #ffd700;
+}
+#contenedorDiscos {
+  > article {
+    padding: 2em;
+    margin: 2em;
+    background-color: var(--bg-color-5);
     border-radius: var(--border-radius);
 
-    cursor: pointer;
-    &:hover {
-        background-color: rgb(170, 74, 74);
+    & li {
+      border: 1px solid var(--bg-color-2);
+      border-radius: var(--border-radius);
+      display: flex;
+      justify-content: space-between; /* <--- separa nombre y duración */
+      align-items: center;
+      padding: 1rem;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
     }
 
-    &:focus {
-        outline: 1px solid indianred;
-        outline-offset: 2px;
+    & img {
+      width: 300px;
+      height: 300px;
+      object-fit: cover; /* para que la imagen se recorte bien dentro del círculo */
+      border-radius: 50%;
     }
-}
 
-#contenedorDiscos {
+    & div.info {
+      background-color: #bf3b02;
+      display: grid;
+      grid-template-rows: 1fr auto auto;
+      row-gap: 0.5em;
+      padding-bottom: 1rem;
 
-    > article {
-        padding: 2em;
-        margin: 2em;
-        background-color: var(--bg-color-2);
+      > h2 {
+        align-self: center;
+        font-size: 4em;
+      }
+
+      > p.artista {
+        font-size: 1.4rem;
+      }
+
+      > p.id {
+        color: var(--txt-color-2);
+      }
+    }
+  }
+
+  > div ul {
+    margin: 1rem;
+
+    & li {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      padding: 0.5em 1em;
+      border-radius: var(--border-radius);
+
+      &:nth-child(even) {
+        background-color: var(--bg-color-3);
+      }
+
+      & p.duracion {
+        align-self: center;
+      }
+      & p.duracion--larga::before {
+        content: "+3min";
+        background-color: var(--bg-color-4);
+        padding: 0.2rem 0.4rem;
         border-radius: var(--border-radius);
-
-        > header {
-            display: flex;
-            justify-content: flex-end;
-            flex-direction: column-reverse;
-            gap: 2em;
-
-            & img {
-                width: 300px;
-            }
-
-            & div.info {
-                display: grid;
-                grid-template-rows: 1fr auto auto;
-                row-gap: .5em;
-                padding-bottom: 1rem;
-
-                > h2 {
-                    align-self: center;
-                    font-size: 4em;
-                }
-
-                > p.artista {
-                    font-size: 1.4rem;
-                }
-
-                > p.id {
-                    color: var(--txt-color-2);
-                }
-            }
-        }
-
-        > div ul{
-            margin: 1rem;
-
-            & li {
-                display: grid;
-                grid-template-columns: 1fr auto;
-                padding: .5em 1em;
-                border-radius: var(--border-radius);
-
-                &:nth-child(even) {
-                    background-color: var(--bg-color-3);
-                }
-
-                & p.duracion {
-                    align-self: center;
-                }
-                & p.duracion--larga::before {
-                    content: '+3min';
-                    background-color: var(--bg-color-4);
-                    padding: .2rem .4rem;
-                    border-radius: var(--border-radius);
-                    opacity: .3;
-                    margin: 0 1rem;
-                }
-            }
-        }
+        opacity: 0.3;
+        margin: 0 1rem;
+      }
     }
+  }
 }
+
 /* <article>
                 <header>
                     <div>
@@ -166,36 +243,35 @@ button {
             </article> */
 
 footer ul {
-    border-top: 1px solid var(--txt-color-2);
-    max-width: 90%;
+  border-top: 1px solid var(--txt-color-2);
+  max-width: 90%;
 
-    margin: 2rem auto 0;
-    padding: 1rem;
+  margin: 2rem auto 0;
+  padding: 1rem;
 
-    text-align: center;
+  text-align: center;
+  font-size: 1.2rem;
 
-    > li:not(:last-child) {
-        margin-bottom: .5rem;
-    }
+  > li:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
 }
 
 @media (width >= 1280px) {
-    footer ul{
-        display: flex;
-        justify-content: space-around;
+  footer ul {
+    display: flex;
+    justify-content: space-around;
 
-        > li {
-            margin-bottom: 0;
-        }
+    > li {
+      margin-bottom: 0;
     }
+  }
 
-    #contenedorDiscos {
-
-        > article {
-
-            > header {
-                flex-direction: row-reverse;
-            }
-        }
+  #contenedorDiscos {
+    > article {
+      > header {
+        flex-direction: row-reverse;
+      }
     }
+  }
 }

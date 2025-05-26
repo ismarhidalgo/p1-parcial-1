@@ -9,16 +9,24 @@ class Pista {
         this.#duracion = duracion;
     }
 
+    get getNombre() {
+        return this.#nombre;
+    }
+
+    get getDuracion() {
+        return this.#duracion;
+    }
+
     /*
      * Función que genera la estructura html de la pista
      */
     generarEstructuraHtml(_clasesExtra = "") {
-        return `
-            <li>
-                <h3>${this.#nombre}</h3>
-                <p class="${this.obtenerClases()}">${this.#duracion.toHhMmSs(3)}</p>
-            </li>
-        `;
+      return `
+        <li class="${_clasesExtra}">
+            <h3>${this.#nombre}</h3>
+            <p class="${this.obtenerClases()}">${this.#duracion.toHhMmSs(3)}</p>
+        </li>
+    `;
     }
 
     /*
